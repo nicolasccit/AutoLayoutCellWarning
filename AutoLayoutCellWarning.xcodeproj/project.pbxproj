@@ -13,7 +13,6 @@
 		DF3E95D11884463200306A49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF3E95CF1884463200306A49 /* InfoPlist.strings */; };
 		DF3E95D31884463200306A49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3E95D21884463200306A49 /* main.m */; };
 		DF3E95D71884463200306A49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3E95D61884463200306A49 /* AppDelegate.m */; };
-		DF3E95DA1884463200306A49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF3E95D81884463200306A49 /* Main.storyboard */; };
 		DF3E95DD1884463200306A49 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3E95DC1884463200306A49 /* ViewController.m */; };
 		DF3E95DF1884463200306A49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3E95DE1884463200306A49 /* Images.xcassets */; };
 		DF3E95E61884463200306A49 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3E95E51884463200306A49 /* XCTest.framework */; };
@@ -21,6 +20,8 @@
 		DF3E95E81884463200306A49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3E95CA1884463200306A49 /* UIKit.framework */; };
 		DF3E95F01884463200306A49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF3E95EE1884463200306A49 /* InfoPlist.strings */; };
 		DF3E95F21884463200306A49 /* AutoLayoutCellWarningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3E95F11884463200306A49 /* AutoLayoutCellWarningTests.m */; };
+		DF3E95FD188451CD00306A49 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3E95FC188451CD00306A49 /* TableViewCell.m */; };
+		DF3E96031884533100306A49 /* 150x150@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3E96021884533100306A49 /* 150x150@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +45,6 @@
 		DF3E95D41884463200306A49 /* AutoLayoutCellWarning-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutoLayoutCellWarning-Prefix.pch"; sourceTree = "<group>"; };
 		DF3E95D51884463200306A49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DF3E95D61884463200306A49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DF3E95D91884463200306A49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF3E95DB1884463200306A49 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DF3E95DC1884463200306A49 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DF3E95DE1884463200306A49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +53,9 @@
 		DF3E95ED1884463200306A49 /* AutoLayoutCellWarningTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoLayoutCellWarningTests-Info.plist"; sourceTree = "<group>"; };
 		DF3E95EF1884463200306A49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF3E95F11884463200306A49 /* AutoLayoutCellWarningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutCellWarningTests.m; sourceTree = "<group>"; };
+		DF3E95FB188451CD00306A49 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		DF3E95FC188451CD00306A49 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		DF3E96021884533100306A49 /* 150x150@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "150x150@2x.png"; path = "AutoLayoutCellWarning/150x150@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 		DF3E95BA1884463200306A49 = {
 			isa = PBXGroup;
 			children = (
+				DF3E96011884530900306A49 /* Resources */,
 				DF3E95CC1884463200306A49 /* AutoLayoutCellWarning */,
 				DF3E95EB1884463200306A49 /* AutoLayoutCellWarningTests */,
 				DF3E95C51884463200306A49 /* Frameworks */,
@@ -114,11 +118,12 @@
 			children = (
 				DF3E95D51884463200306A49 /* AppDelegate.h */,
 				DF3E95D61884463200306A49 /* AppDelegate.m */,
-				DF3E95D81884463200306A49 /* Main.storyboard */,
 				DF3E95DB1884463200306A49 /* ViewController.h */,
 				DF3E95DC1884463200306A49 /* ViewController.m */,
 				DF3E95DE1884463200306A49 /* Images.xcassets */,
 				DF3E95CD1884463200306A49 /* Supporting Files */,
+				DF3E95FB188451CD00306A49 /* TableViewCell.h */,
+				DF3E95FC188451CD00306A49 /* TableViewCell.m */,
 			);
 			path = AutoLayoutCellWarning;
 			sourceTree = "<group>";
@@ -150,6 +155,14 @@
 				DF3E95EE1884463200306A49 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF3E96011884530900306A49 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF3E96021884533100306A49 /* 150x150@2x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +243,7 @@
 			files = (
 				DF3E95DF1884463200306A49 /* Images.xcassets in Resources */,
 				DF3E95D11884463200306A49 /* InfoPlist.strings in Resources */,
-				DF3E95DA1884463200306A49 /* Main.storyboard in Resources */,
+				DF3E96031884533100306A49 /* 150x150@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF3E95DD1884463200306A49 /* ViewController.m in Sources */,
+				DF3E95FD188451CD00306A49 /* TableViewCell.m in Sources */,
 				DF3E95D71884463200306A49 /* AppDelegate.m in Sources */,
 				DF3E95D31884463200306A49 /* main.m in Sources */,
 			);
@@ -280,14 +294,6 @@
 				DF3E95D01884463200306A49 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		DF3E95D81884463200306A49 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF3E95D91884463200306A49 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		DF3E95EE1884463200306A49 /* InfoPlist.strings */ = {
@@ -334,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -367,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -460,6 +466,7 @@
 				DF3E95F71884463200306A49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF3E95F81884463200306A49 /* Build configuration list for PBXNativeTarget "AutoLayoutCellWarningTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +475,7 @@
 				DF3E95FA1884463200306A49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
