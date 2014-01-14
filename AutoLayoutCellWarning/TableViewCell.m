@@ -39,22 +39,19 @@ static const CGFloat kNameFontSize = 16.0f;
         [self.labelName setTranslatesAutoresizingMaskIntoConstraints:NO];
         [self.contentView addSubview:self.labelName];
         
+        self.contentView.backgroundColor = [UIColor greenColor];
+        
         [self configureCell];
+        [self.contentView addConstraints:[self constraints]];
     }
-    
     return self;
-}
-
-- (void)updateConstraints
-{
-    [super updateConstraints];
-    if (self.didSetupConstraints) return;
-    [self.contentView addConstraints:[self constraints]];
-    self.didSetupConstraints = YES;
 }
 
 - (void)configureCell {
     [self.imageThumbnail setImage:[UIImage imageNamed:@"150x150"]];
+    // next line changes the image, to prove that we are resizing to fit the image size
+    // comment it out, and run the app again: it still works!
+    [self.imageThumbnail setImage:[UIImage imageNamed:@"smileyiPhone"]];
     self.labelName.text = @"HELLO";
 }
 
@@ -67,7 +64,7 @@ static const CGFloat kNameFontSize = 16.0f;
                               @"padding":@(kPadding)};
     
     NSString *const kHorizontal = @"H:|-padding-[_imageThumbnail(==imageWidth)]-[_labelName]";
-    NSString *const kImageVertical = @"V:|-padding-[_imageThumbnail(==imageHeight)]-padding-|";
+    NSString *const kImageVertical = @"V:|-padding-[_imageThumbnail]-padding-|";
     NSString *const kLabelVertical = @"V:|-padding-[_labelName]";
     
     [constraints addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:kHorizontal options:0 metrics:metrics views:viewsDictionary]];
