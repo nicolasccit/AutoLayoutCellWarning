@@ -39,6 +39,7 @@ static const CGFloat kNameFontSize = 16.0f;
         [self.labelName setTranslatesAutoresizingMaskIntoConstraints:NO];
         [self.contentView addSubview:self.labelName];
         
+        // added this just to prove that the content view is doing the right thing
         self.contentView.backgroundColor = [UIColor greenColor];
         
         [self configureCell];
