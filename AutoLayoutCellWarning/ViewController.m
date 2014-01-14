@@ -45,19 +45,11 @@
 {
     TableViewCell* cell = [[TableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"hello"];
     
-    [cell setNeedsUpdateConstraints];
-    [cell updateConstraintsIfNeeded];
-    
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewCell* cell = self.autoLayoutCell;
-    
-    [cell setNeedsUpdateConstraints];
-    [cell updateConstraintsIfNeeded];
-    [cell setNeedsLayout];
-    [cell layoutIfNeeded];
     
     CGFloat height = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
     

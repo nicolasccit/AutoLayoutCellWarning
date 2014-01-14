@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3272A46E1884D79F0032F087 /* smileyiPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3272A46D1884D79F0032F087 /* smileyiPhone.png */; };
 		DF3E95C71884463200306A49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3E95C61884463200306A49 /* Foundation.framework */; };
 		DF3E95C91884463200306A49 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3E95C81884463200306A49 /* CoreGraphics.framework */; };
 		DF3E95CB1884463200306A49 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3E95CA1884463200306A49 /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3272A46D1884D79F0032F087 /* smileyiPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smileyiPhone.png; sourceTree = "<group>"; };
 		DF3E95C31884463200306A49 /* AutoLayoutCellWarning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutCellWarning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3E95C61884463200306A49 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF3E95C81884463200306A49 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -160,6 +162,7 @@
 		DF3E96011884530900306A49 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3272A46D1884D79F0032F087 /* smileyiPhone.png */,
 				DF3E96021884533100306A49 /* 150x150@2x.png */,
 			);
 			name = Resources;
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF3E95DF1884463200306A49 /* Images.xcassets in Resources */,
+				3272A46E1884D79F0032F087 /* smileyiPhone.png in Resources */,
 				DF3E95D11884463200306A49 /* InfoPlist.strings in Resources */,
 				DF3E96031884533100306A49 /* 150x150@2x.png in Resources */,
 			);
